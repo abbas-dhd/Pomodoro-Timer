@@ -37,6 +37,7 @@ const Timer = (props) => {
 
     // used useEffect to get the latest value for timerState after changing state
     useEffect(() => {
+        if (!startTimer) return;
         switch (timerState) {
             case "work":
                 setMinutes(WORK_MINUTES);
@@ -57,7 +58,6 @@ const Timer = (props) => {
     };
 
     useEffect(() => {
-        console.log(minutes, seconds, timerState);
         if (!startTimer) return;
         let interval = setInterval(() => {
             setSeconds(seconds - 1);
