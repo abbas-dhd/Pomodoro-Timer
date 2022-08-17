@@ -18,7 +18,9 @@ const Timer = (props) => {
 
     const startTimerHandler = () => {
         setStartTimer(true);
-        setTitle("Time to work");
+        timerState === "work"
+            ? setTitle("Time to work")
+            : setTitle("Time for a break");
     };
     const stopTimerHandler = () => {
         setStartTimer(false);

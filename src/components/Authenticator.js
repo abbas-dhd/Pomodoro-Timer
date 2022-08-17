@@ -29,7 +29,7 @@ const Authenticator = (props) => {
         <div className={classes["login-container"]}>
             <button className={classes["login-btn"]} onClick={googleSignIn}>
                 <span className={classes["btn-span-img"]}>
-                    <img src={LOGO_URL} />
+                    <img src={LOGO_URL} alt="google logo" />
                 </span>
                 <span className={classes["btn-span-label"]}>
                     Login with Google
