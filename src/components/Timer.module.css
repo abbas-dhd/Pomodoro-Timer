@@ -1,0 +1,73 @@
+.h1-timer,
+.h2-timer {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    padding: 1rem;
+    color: rgb(22, 22, 22);
+}
+.h1-timer {
+    font-size: 40px;
+    margin-top: 4rem;
+    margin-bottom: 0;
+}
+
+.h2-timer {
+    font-size: 120px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.timer-container {
+    margin: auto;
+    width: 100%;
+    height: fit-content;
+    /* display:flex; */
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.button-container {
+    margin: auto;
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn {
+    height: 70px;
+    width: 120px;
+    font-size: 30px;
+    padding: 1rem;
+    border: none;
+    border-radius: 3px;
+    transition: color ease-in-out 0.25s;
+    transition: background-color ease-in-out 0.2s;
+}
+
+.start-btn {
+    background-color: lightgreen;
+    border: 2px solid black;
+}
+.stop-btn {
+    background-color: lightpink;
+    border: 2px solid black;
+}
+.restart-btn {
+    background-color: lightblue;
+    border: 2px solid black;
+}
+
+.start-btn:hover {
+    background-color: white;
+    color: hsl(120, 50%, 45%);
+}
+.stop-btn:hover {
+    background-color: white;
+    color: rgb(247, 96, 121);
+}
+
+.restart-btn:hover {
+    background-color: white;
+    color: rgb(94, 205, 241);
+}
