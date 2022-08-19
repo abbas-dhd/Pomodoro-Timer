@@ -51,11 +51,18 @@ const Timer = (props) => {
                 break;
             default:
         }
-    }, [timerState]);
+    }, [
+        BREAK_MINUTES,
+        BREAK_SECONDS,
+        WORK_MINUTES,
+        WORK_SECONDS,
+        startTimer,
+        timerState,
+    ]);
 
-    const changeState = () => {
-        timerState === "work" ? setTimerState("break") : setTimerState("work");
-    };
+    // const changeState = () => {
+
+    // };
 
     useEffect(() => {
         if (!startTimer) return;
@@ -66,7 +73,9 @@ const Timer = (props) => {
                     setMinutes((prevState) => prevState - 1);
                     setSeconds(59);
                 } else {
-                    changeState();
+                    timerState === "work"
+                        ? setTimerState("break")
+                        : setTimerState("work");
                 }
             }
         }, 1000);
