@@ -21,7 +21,7 @@ const Authenticator = (props) => {
             });
 
         // console.log(result);
-        result ? console.log(result) : console.log("nope");
+//         result ? console.log(result) : console.log("nope");
         props.onLogin(result);
         // return;
     };
